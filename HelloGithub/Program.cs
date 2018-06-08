@@ -8,8 +8,8 @@ using System.Reflection;
 namespace HelloGithub {
     class Program {
         static void Main(string[] args) {
-            String appVersion = FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileVersion; 
-            Console.WriteLine("Hello Github! Version: {0}", appVersion);
+            String fileVersion = FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).FileVersion; 
+            Console.WriteLine("Hello Github! Version: {0}", fileVersion);
             Console.WriteLine("Press Any Key to Exit...");
             Console.ReadLine();
         }
